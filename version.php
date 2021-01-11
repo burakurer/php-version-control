@@ -1,3 +1,5 @@
 <?php
 
-echo PHP_VERSION > 7.2 ? "php version enough -> " . PHP_VERSION : "php version not enough -> " . PHP_VERSION;
+$minPHP = '7.4.0';
+
+echo PHP_VERSION >= $minPHP ? "php version enough" : "php version not enough, required minimum php version " . $minPHP;
